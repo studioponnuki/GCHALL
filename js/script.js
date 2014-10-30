@@ -11,10 +11,16 @@
 				controller  : 'mainController'
 			})
 
-			// route for the about page
-			.when('/about', {
-				templateUrl : 'pages/about.html',
-				controller  : 'aboutController'
+			// route for the history page
+			.when('/history', {
+				templateUrl : 'pages/history.html',
+				controller  : 'historyController'
+			})
+
+			// route for the location page
+			.when('/location', {
+				templateUrl : 'pages/location.html',
+				controller  : 'locationController'
 			})
 
 			// route for the contact page
@@ -30,10 +36,15 @@
 		$scope.message = 'Everyone come and see how good I look!';
 	});
 
-	scotchApp.controller('aboutController', function($scope) {
+	scotchApp.controller('historyController', function($scope) {
 		$scope.message = 'Look! I am an about page.';
 	});
 
 	scotchApp.controller('contactController', function($scope) {
 		$scope.message = 'Contact us! JK. This is just a demo.';
+	});
+
+	scotchApp.controller('locationController', function($scope) {
+		// create a message to display in our view
+		$scope.message = 'This is the location page';
 	});
