@@ -4,7 +4,48 @@
 	padding: 25px;
 }
 
-/* -------- */
+/* base setup */
+
+* {
+	-webkit-font-smoothing: antialiased;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+::selection {
+	background: #bfa57c;
+	color: #fff;
+}
+
+body {
+	color: #a48d66;
+	font: 14px/23px proxima-nova-alt, "Proxima Nova Alt", sans-serif;
+}
+
+h1, h2, h3, h4, b {
+	font-weight: 300;
+	font-family: bree-web, Bree, sans-serif;
+}
+
+h2 {
+	font-size: 28px;
+	padding-bottom: 60px;
+
+}
+
+b {
+	font-weight: 500;
+	font-size: 16px;
+
+	color: #c3522f;
+
+}
+
+/* ---------- */
+
+
 
 
 .navbar{
